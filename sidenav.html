@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SideNav</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-border-right" style="width: 445px;height: 800px;left: 0px; top: 114px; display: none;box-shadow: 20px 0px 50px rgba(0, 0, 0, 0.05);
+
+border-radius: 0px 50px 50px 0px;" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large" style="opacity: 1;"> &times;</button>
+    <a href="#" class="w3-bar-item w3-button" style="display: flex;justify-content: space-around;align-items: center;top: 557px;line-height: 54px; color: #114B5F;font-family: sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size:30px;
+    " >Covid
+      Help</a>
+    <a href="#" class="w3-bar-item w3-button" style="display: flex;justify-content: space-around;align-items: center;line-height: 54px; color: #114B5F;font-family: sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size:30px;">Home</a>
+    <a href="#" class="w3-bar-item w3-button" style="display: flex;justify-content: space-around;align-items: center;line-height: 54px; color: #114B5F;font-family: sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size:30px;">Resources</a>
+    <a href="#" class="w3-bar-item w3-button" style="display: flex;justify-content: space-around;align-items: center;line-height: 54px; color: #114B5F;font-family: sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size:30px;">Talk with a Doc!</a>
+    <a href="#" class="w3-bar-item w3-button" style="display: flex;justify-content: space-around;align-items: center;line-height: 54px; color: #114B5F;font-family: sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size:30px;">Contact Us!</a>
+    <a href="#" class="w3-bar-item w3-button" style="display: flex;justify-content: space-around;align-items: center;line-height: 54px; color: #114B5F;font-family: sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size:30px;">FAQ</a>
+    <input type="button" value="Donate" style="position: absolute;
+width: 214px;
+height: 40px;
+left: 122px;
+top: 600px;
+border-radius: 20px;
+"></input>
+</div>
+
+
+  <!-- Page Content -->
+  <div class="">
+    <button class="w3-button w3 w3-xlarge" onclick="w3_open()" style="opacity: 0.5;">☰</button>
+
+  </div>
+
+
+
+
+
+  <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
