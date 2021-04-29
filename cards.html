@@ -1,61 +1,119 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
+<head>
+      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+.float-layout {
+  padding: 5px 5px;
+  float: left;
+  width: 40%;
+  height: 0%;
+  box-sizing: border-box;
+  margin: 0;
+}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>Cards!</title>
-  </head>
-  <body>
-    
+.card-container {
+  overflow: hidden;
+  border-radius: 80px 0 0px 80px;
+  box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.25);
+ 
 
-    <!-- Optional JavaScript; choose one of the two! -->
+}
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-!-->
 
+.card {
+  background-color:lightgrey;
+  color: black;
+  min-height: 100%; /*replace this it in width: 100%*/
+  width: 80%;
   
+  float: right;
 
-   
-    
-    
-<div class="card-body" style="position: absolute;
-width: 620px;
-height: 250px;
-left: 42px;
-top: 125px;
-border-radius: 80px 0 0px 80px;
+}
 
-box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));"> 
-    <h5 class="card-title" style="align-items: center;display: flex;justify-content: space-around;">Peter Pan</h5>
-     
-     <div class="col-md-10">
-        <img width="140px" height="140px" src='https://cdn3.vectorstock.com/i/1000x1000/53/07/lung-logo-template-icon-vector-31095307.jpg' style="position: absolute;
-width: 161.85px;
-height:162px;
-left:0px;
-top:0px;" /></div>
+.card-title {
+  font-size: 30px;
+  text-align: left;
+  font-weight: bold;
+  padding-top: 0px;
+  padding: 0 0 0px 30px;
+  font-family: 'Montserrat';
+}
+
+.card-desc {
+  padding: 30px;
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Montserrat';
   
-    <p style="align-items: center;display:flex;justify-content: space-around;">Updated</p>
-    <p style="align-items: center;display:flex;justify-content: center;">27th April 10.30pm</p>
-    
-    <p style="text-align: right;"> 1234567890</p>
-     <p style="text-align: right; opacity:0.8;">Location,State,Country</p>
-   </div></div></div>
-  </body>
+}
+
+/*add this it*/
+.card-image {
+  display: flex;
+    background-color:lightgrey;
+}
+/*-------------*/
+
+div.card-image img {
+  width: 20%;
+  height: auto;
+
+}
+
+/* Phone Devices Query */
+@media only screen and (max-width: 37.5em) {
+  div.card-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /*add this it*/
+  .card-image {
+     flex-direction: column;
+  }
+  /*----------------------*/
+
+  .card {
+    width: 100%;
+    margin-top: -4px;
+  }
+}
+
+</style>
+
+
+<body>
+
+<div class="card-container">
+  <div class="float-layout">
+    <div class="card-image">
+     <svg width="282" height="182" viewBox="0 0 162 162" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="161.855" height="200" fill="url(#pattern0)"/>
+<path d="M81.5751 137.214C112.504 137.214 137.577 112.119 137.577 81.1619C137.577 50.2052 112.504 25.1099 81.5751 25.1099C50.6461 25.1099 25.5733 50.2052 25.5733 81.1619C25.5733 112.119 50.6461 137.214 81.5751 137.214Z" fill="white"/>
+<path d="M81.5751 44.064C61.0195 44.064 44.3485 60.75 44.3485 81.3239C44.3485 101.898 61.0195 118.584 81.5751 118.584C102.131 118.584 118.802 101.898 118.802 81.3239C118.802 60.75 102.131 44.064 81.5751 44.064ZM102.454 100.764L88.5349 96.066C87.24 95.58 86.2689 94.4459 86.2689 92.9879V79.7039L81.8988 72.9L78.0143 78.894V92.826C78.0143 94.284 77.0432 95.4179 75.7483 95.9039L61.8288 100.602C59.7247 101.25 57.4587 99.63 57.6206 97.362C57.9443 88.776 60.2103 70.47 72.9968 62.532C75.1009 61.236 77.8525 62.856 77.8525 65.286V72.576L80.1184 69.174V54.918C80.1184 53.946 80.9277 53.298 81.737 53.298C82.7081 53.298 83.3555 54.108 83.3555 54.918V69.174L85.9452 73.224V65.124C85.9452 62.532 88.6967 61.074 90.8009 62.37C103.749 70.308 106.015 88.6139 106.177 97.1999C106.824 99.7919 104.559 101.574 102.454 100.764Z" fill="#38DAE0"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0"/>
+</pattern>
+<image id="image0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsSAAALEgHS3X78AAAA"/>
+</defs>
+</svg>
+
+      <div class="card">
+        <div class="card-title">Peter Pan &#10004;</div>
+        <div class="card-desc" >
+          Updated
+          <p style="font-weight: lighter;padding: 0 0 0px 0px;">27th April 2021</p>
+          <p style="text-align: right; ;">1234567890</p>
+          <p style="font-size:20px;text-align:right;"> <i class="material-icons">place</i>Location,State,Country</p> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
 </html>
-
